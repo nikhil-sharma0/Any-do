@@ -1,0 +1,16 @@
+.DashboardContent {
+  margin-top: 20px;
+  height: 650px;
+  padding-left: 20px;
+  width: 75%;
+  overflow: hidden;
+  display: inline;
+  margin-right: 0px;
+  margin-top: 50px;
+}
+
+#noTaskImage {
+    width: 15%;
+    margin-left: 170px;
+    padding-bottom: 220px;
+}

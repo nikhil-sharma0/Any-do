@@ -1,0 +1,48 @@
+.item-section {
+  border-radius: 6px;
+  box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+  margin-left: 20px;
+  line-height: 2;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: auto;
+  padding: 5px;
+  width: 390px;
+  margin-bottom: 20px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.item-section:hover {
+  border-color: #0080ff;
+  box-shadow: 0 1px 1px 0 white, 0 0 0 1px white;
+}
+
+.item-section__check {
+  margin-right: 20px;
+  width: 15px;
+  height: 15px;
+  margin-left: 12px;
+}
+
+.item-section__content {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-wrap: break-word;
+}
+
+.clicked {
+  text-decoration: line-through;
+}
+
+.timeDisplay {
+  border-radius: 10px;
+  font-size: 10px;
+  width: 65px;
+  height: 20px;
+  text-align: center;
+}
+
+.timeDisplay:hover {
+  border: 1px solid #d4d4d5;
+}

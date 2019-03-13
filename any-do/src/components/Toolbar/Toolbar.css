@@ -1,0 +1,46 @@
+.toolbar-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 100px;
+  width: 430px;
+  height: 45px;
+  position: absolute;
+  bottom: 0px;
+  box-shadow: 0px -5px 5px -5px #d4d4d5;
+}
+
+.toolbar-section__input {
+  outline: 0;
+  color: #353535;
+  padding: 0.67857143em 1em;
+  border: 2px solid rgba(34, 36, 38, 0.15);
+  border-radius: 20px;
+  width: 350px;
+}
+.toolbar-section__input:hover {
+  border: 1px solid #0080ff;
+}
+
+.toolbar-section__button {
+  cursor: pointer;
+  outline: 0;
+  border-radius: 50%;
+  padding: 5px 11px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.toolbar-section__button:disabled {
+  cursor: not-allowed;
+}
+.upArrowButton {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  border: 2px solid rgba(34, 36, 38, 0.15);
+  margin-left: 5px;
+}

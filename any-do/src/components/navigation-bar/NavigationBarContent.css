@@ -1,0 +1,56 @@
+.SideBarLinked {
+  color: #0080ff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 27px;
+}
+.NavigationSideBar {
+  padding: 10px;
+  background: #eee;
+}
+.CategoryList {
+  font-size: 18px;
+}
+.SideMenu {
+  margin: 0;
+  color: #a4a4a4;
+  margin-top: 45px;
+  background: white;
+  height: 568px;
+  z-index: 30;
+  background-color: white;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 1px 1px #f8f4f8;
+  cursor: pointer;
+  padding-top: 40px;
+  display: inline-block;
+  float: left;
+  width: 260px;
+}
+
+.NavigationBarMenu {
+  padding-inline-start: 0px;
+  margin-top: 0;
+}
+
+.NavigationBarMenu li {
+  padding: 10px;
+  padding-left: 75px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.NavigationBarMenu li:hover {
+  color: #3c3c3c;
+  text-decoration: none;
+  background: #eeeeee;
+  border-radius: 4px;
+}
+.NavigationBarMenu li::after {
+  background: #eeeeee;
+}
+
+#EditButton:hover {
+  color: #3c3c3c;
+}

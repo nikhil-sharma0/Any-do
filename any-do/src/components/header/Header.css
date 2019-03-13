@@ -1,0 +1,85 @@
+#NavigationButton {
+  margin-left: 10px;
+  color: grey;
+  cursor: pointer;
+}
+
+.HeaderContent {
+  background: white;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 10%;
+  padding: 14px var(--app-header-control-h-gap);
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  z-index: var(--app-header-z-index);
+  box-sizing: border-box;
+}
+
+.HeaderAdd {
+  color: grey;
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+  justify-content: flex-start;
+}
+
+.HeaderAddNewTodo {
+  margin: 0;
+  font-size: 14px;
+  display: inline-block;
+  background: #0080ff;
+  color: white;
+  padding: 10px 20px;
+  margin-left: 30px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.HeaderSettings {
+  color: #b3b3b3;
+  align-items: center;
+  position: absolute;
+  margin-left: 40%;
+  width: 100%;
+}
+
+.search {
+  width: 30%;
+  position: relative;
+}
+
+.searchTerm {
+  float: left;
+  width: 100%;
+  border: 3px solid #b8b8b8;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  color: white;
+}
+
+.searchTerm:focus {
+  color: #b8b8b8;
+}
+
+.searchButton {
+  position: absolute;
+  right: -50px;
+  width: 40px;
+  height: 36px;
+  border: 1px solid #b8b8b8;
+  background: #b8b8b8;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
