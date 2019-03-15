@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 
 import "./Toolbar.css";
 
@@ -8,7 +7,9 @@ class Toolbar extends Component {
     itemName: ""
   };
 
-  inputHandler(value) {
+  inputHandler(e, value) {
+    if(e.keyCode === 13) 
+      this.clickHandler(e)
     this.setState({
       itemName: value
     });
@@ -30,7 +31,7 @@ class Toolbar extends Component {
           placeholder="Click to quickly add a task"
           value={this.state.itemName}
           onChange={e => {
-            this.inputHandler(e.target.value);
+            this.inputHandler(e, e.target.value);
           }}
         />
         <div

@@ -62,6 +62,7 @@ export class Dashboard extends Component {
   };
 
   onDeleteHandler = id => {
+    this.hideAddReminder();
     let category = this.props.category;
     let updateList = { ...this.state.allTasks[category] };
     let index = -1;
@@ -129,6 +130,10 @@ export class Dashboard extends Component {
     this.setState({ currentTask: eachItem });
   };
 
+  hideAddReminder = eachItem => {
+    this.setState({ currentTask: "" });
+  };
+
   render() {
     let stateAsProps = { ...this.state.allTasks[this.props.category] };
     return (
@@ -138,6 +143,7 @@ export class Dashboard extends Component {
           currentState={stateAsProps}
           onDeleteHandler={this.onDeleteHandler}
           showAddReminder={this.showAddReminder}
+          hideAddReminder={this.hideAddReminder}
         />
         {this.state.currentTask ? (
           <Reminder

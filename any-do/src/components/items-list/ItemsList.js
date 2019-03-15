@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Item from "../item/Item";
-import Toolbar from "../Toolbar/Toolbar";
+import Toolbar from "../toolbar/Toolbar";
 
 import "./ItemsList.css";
 
@@ -16,6 +16,7 @@ class ItemList extends Component {
               this.props.onDeleteHandler(eachItem.id);
             }}
             showAddReminder={this.props.showAddReminder}
+            hideAddReminder={this.hideAddReminder}
           />
         );
       });

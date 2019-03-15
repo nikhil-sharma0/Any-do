@@ -12,6 +12,7 @@
   margin-bottom: 20px;
   border: 1px solid white;
   cursor: pointer;
+  height: 35px;
 }
 .item-section:hover {
   border-color: #0080ff;
@@ -33,6 +34,10 @@
 
 .clicked {
   text-decoration: line-through;
+}
+.subitem-section {
+  width: 365px;
+  height: 100%;
 }
 
 .timeDisplay {

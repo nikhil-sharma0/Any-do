@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./Reminder.css";
 import Modal from "@material-ui/core/Modal";
 import { withStyles } from "@material-ui/core/styles";
-import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import DateFnsUtils from "@date-io/date-fns";
 import {
@@ -35,7 +34,7 @@ function getModalStyle() {
 export class Reminder extends Component {
   state = {
     open: false,
-    selectedDate: new Date("2019-03-12T00:00:00")
+    selectedDate: new Date()
   };
 
   handleOpen = () => {
